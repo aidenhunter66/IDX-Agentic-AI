@@ -23,5 +23,5 @@ Queries two MLS datasets in MySQL (`idx_exchange`):
 
 ## Progress
 - [x] Week 0: Environment setup ([proof: WhatsApp round-trip](week-0/week0-agentic-ai.png))
-- [ ] Week 1: Architecture fundamentals
-- [ ] Week 2: Natural language property search
+- [x] Week 1: Architecture fundamentals
+- [ ] Week 2: Natural language property search --> In progress
