@@ -1,0 +1,37 @@
+✔ handbook example (0.746459ms)
+✖ price written as '2 mil' (0.454333ms)
+✔ baths with a decimal (2.5 bath) (0.047042ms)
+✔ number of beds (0.054041ms)
+✔ Has a view (0.042167ms)
+✔ 'apartment' is not a recognized type (0.043708ms)
+✔ price written as '3M' (0.036667ms)
+✔ type test --> land (0.04225ms)
+✔ how many square feet (0.080208ms)
+✔ no pool mentioned -> null (0.08825ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 9
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 63.673583
+
+✖ failing tests:
+
+test at tests/parse.test.ts:15:1
+✖ price written as '2 mil' (0.454333ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  2 !== 2000000
+  
+      at TestContext.<anonymous> (file:///Users/aidenhunter/IDX-Agentic-AI/tests/parse.test.ts:17:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 2,
+    expected: 2000000,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
