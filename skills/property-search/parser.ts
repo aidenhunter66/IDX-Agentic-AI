@@ -1,4 +1,15 @@
-export async function parsePropertyQuery(query: string) {
+export type PropertyFilters = {
+  city: string | null;
+  maxPrice: number | null;
+  beds: number | null;
+  baths: number | null;
+  sqft: number | null;
+  type: string | null;
+  pool: string | null;
+  hasView: string | null;
+};
+
+export async function parsePropertyQuery(query: string): Promise<PropertyFilters> {
  const cityMatch = query.match(/in ([A-Za-z\s]+?)(?:\s+under|\s+with|\s+at|$)/i);
  const priceMatch = query.match(/under \$?([\d,.]+)(k|m)?/i);
  const bedsMatch = query.match(/(\d+)[\s-]*(bed|beds|bedroom|bedrooms)/i);

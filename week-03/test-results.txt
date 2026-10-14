@@ -1,0 +1,49 @@
+
+> idx-agentic-ai@1.0.0 test
+> node --test tests/*.test.ts
+
+✔ handbook query returns matching Irvine condos (18.149166ms)
+✔ pool filter matches rows (database stores '1', not 'True') (6.241ms)
+✔ view filter only returns listings with a view (2.936625ms)
+✔ results are sorted cheapest first (5.267583ms)
+✔ limit and page work (12.477834ms)
+✔ impossible search returns no rows (5.817166ms)
+✔ SQL injection in the city is treated as text (0.709125ms)
+✔ sold comps are recent, residential, and never in the future (134.421625ms)
+✔ handbook example (0.875459ms)
+✖ price written as '2 mil' (0.497083ms)
+✔ baths with a decimal (2.5 bath) (0.056083ms)
+✔ number of beds (0.050209ms)
+✔ Has a view (0.048583ms)
+✔ 'apartment' is not a recognized type (0.047625ms)
+✔ price written as '3M' (0.045458ms)
+✔ type test --> land (0.053667ms)
+✔ how many square feet (0.056167ms)
+✔ no pool mentioned -> null (0.089458ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 17
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 283.890459
+
+✖ failing tests:
+
+test at tests/parse.test.ts:15:1
+✖ price written as '2 mil' (0.497083ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  2 !== 2000000
+  
+      at TestContext.<anonymous> (file:///Users/aidenhunter/IDX-Agentic-AI/tests/parse.test.ts:17:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 2,
+    expected: 2000000,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

@@ -1,0 +1,78 @@
+$ node skills/property-search/search.ts "3 bed condo in Irvine under 1.5M with a pool"
+Filters: {"city":"Irvine","maxPrice":1500000,"beds":3,"baths":null,"sqft":null,"type":"Condominium","pool":"True","hasView":null}
+Found 3 active listings (showing 3, cheapest first):
+
+*1. 10 Goldenbush, Irvine 92604*
+$999,000 · 3 bd / 3 ba · 1,688 sqft
+Condominium · Pool · View · HOA $597/mo
+MLS# 1190390523
+
+*2. 57 Silverado, Irvine 92618*
+$1,000,000 · 3 bd / 2 ba · 1,621 sqft
+Condominium · Pool · View · HOA $190/mo
+MLS# 1174932946
+
+*3. 108 Tribeca, Irvine 92612*
+$1,350,000 · 3 bd / 3 ba · 1,967 sqft
+Condominium · Pool · View · HOA $370/mo
+MLS# 1191059308
+
+$ node skills/property-search/search.ts "2 bed townhome in Newport Beach with a view"
+Filters: {"city":"Newport Beach","maxPrice":null,"beds":2,"baths":null,"sqft":null,"type":"Townhouse","pool":null,"hasView":"True"}
+Found 9 active listings (showing 5, cheapest first):
+
+*1. 12 Latitude Court, Newport Beach 92663*
+$779,000 · 3 bd / 3 ba · 1,129 sqft
+Townhouse · View · HOA $595/mo
+MLS# 1182908010
+
+*2. 2 Canyon Island, Newport Beach 92660*
+$1,195,000 · 2 bd / 2 ba · 1,197 sqft
+Townhouse · View · HOA $810/mo
+MLS# 1190038229
+
+*3. 12 Shellprint Court, Newport Beach 92663*
+$1,350,000 · 4 bd / 3 ba · 1,768 sqft
+Townhouse · View · HOA $500/mo
+MLS# 1174200936
+
+*4. 25 Canyon Island, Newport Beach 92660*
+$1,575,000 · 2 bd / 2 ba · 1,596 sqft
+Townhouse · View · HOA $800/mo
+MLS# 1190225277
+
+*5. 438 Vista Parada, Newport Beach 92660*
+$1,850,000 · 3 bd / 3 ba · 1,887 sqft
+Townhouse · View · HOA $375/mo
+MLS# 1191042372
+
+$ node skills/property-search/search.ts "5 bed in Irvine under 100k"
+Filters: {"city":"Irvine","maxPrice":100000,"beds":5,"baths":null,"sqft":null,"type":null,"pool":null,"hasView":null}
+No active listings match these filters.
+
+$ node skills/property-search/search.ts "hello there"
+No search filters found. Try something like: 3 bed condo in Irvine under 1.5M with a pool
+
+$ node skills/property-search/comps.ts Irvine 6
+50 recent sales in Irvine (last 6 months, max 50). Median sale: $1,570,000
+Most recent 5:
+
+*1. 15335 Seine Circle*
+Sold $2,100,000 on 2026-09-17 (listed $2,199,900)
+6 bd / 4 ba · 3,100 sqft · 0 days on market
+
+*2. 171 Great Lawn*
+Sold $1,930,000 on 2026-09-17 (listed $1,899,888)
+4 bd / 4 ba · 2,429 sqft · 13 days on market
+
+*3. 217 Birdseye*
+Sold $1,900,000 on 2026-09-17 (listed $1,949,000)
+4 bd / 3 ba · 2,410 sqft · 28 days on market
+
+*4. 573 Rockefeller*
+Sold $965,000 on 2026-09-17 (listed $998,000)
+2 bd / 3 ba · 1,801 sqft · 57 days on market
+
+*5. 116 Tritone*
+Sold $1,910,000 on 2026-09-17 (listed $1,980,000)
+3 bd / 3 ba · 2,087 sqft · 145 days on market

@@ -4,7 +4,7 @@ Multi-agent real estate assistant built on [OpenClaw](https://github.com/opencla
 
 Queries two MLS datasets in MySQL (`idx_exchange`):
 - `rets_property`: active California listings
-- `california_sold`: sold transactions 2021–2025
+- `california_sold`: sold transactions (2026)
 
 ## Layout
 | Path | Contents |
@@ -24,4 +24,5 @@ Queries two MLS datasets in MySQL (`idx_exchange`):
 ## Progress
 - [x] Week 0: Environment setup ([proof: WhatsApp round-trip](week-0/week0-agentic-ai.png))
 - [x] Week 1: Architecture fundamentals
-- [ ] Week 2: Natural language property search --> In progress
+- [x] Week 2: Natural language property search ([tests](week-02/test-results.txt), [WhatsApp demo](week-02/IMG_4040.jpeg))
+- [x] Week 3: MLS database integration ([tests](week-03/test-results.txt), [sample output](week-03/sample-output.txt), [WhatsApp search](week-03/IMG_4047.jpeg), [WhatsApp comps](week-03/IMG_4048.png))

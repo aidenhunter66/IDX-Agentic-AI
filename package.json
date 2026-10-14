@@ -1,0 +1,31 @@
+{
+  "name": "idx-agentic-ai",
+  "version": "1.0.0",
+  "description": "Multi-agent real estate assistant built on [OpenClaw](https://github.com/openclaw/openclaw) for the IDX Exchange AI Agentic Engineer Internship (Summer 2026).",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aidenhunter66/IDX-Agentic-AI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/aidenhunter66/IDX-Agentic-AI/issues"
+  },
+  "homepage": "https://github.com/aidenhunter66/IDX-Agentic-AI#readme",
+  "dependencies": {
+    "mysql2": "^3.24.6"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5"
+  }
+}
