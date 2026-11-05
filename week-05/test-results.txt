@@ -1,0 +1,73 @@
+
+> idx-agentic-ai@1.0.0 test
+> node --test tests/*.test.ts
+
+✔ handbook conversation: asks for budget, then type, then searches (24.086667ms)
+✔ a complete first message searches right away (6.614542ms)
+✔ missing city is asked first, and a bare city name answers it (5.108667ms)
+✔ a bare amount answers the budget question (0.734666ms)
+✔ a filter given instead of the city doesn't become the city (2.814792ms)
+✔ bare answers only count right after the question (3.372792ms)
+✔ each question is asked only once; 'any' skips it (2.925458ms)
+✔ a follow-up refines the previous search (7.827792ms)
+✔ 'more' shows the next page (5.148375ms)
+✔ 'start over' clears the session (3.242917ms)
+✔ small talk after results doesn't re-run the search (4.059084ms)
+✔ users don't share sessions (4.632791ms)
+✔ handbook query returns matching Irvine condos (14.812958ms)
+✔ pool filter matches rows (database stores '1', not 'True') (5.657959ms)
+✔ view filter only returns listings with a view (2.170625ms)
+✔ results are sorted cheapest first (3.673791ms)
+✔ limit and page work (9.149334ms)
+✔ impossible search returns no rows (5.894833ms)
+✔ SQL injection in the city is treated as text (0.63675ms)
+✔ sold comps are recent, residential, and never in the future (219.018833ms)
+✔ median of odd, even, and empty lists (0.418125ms)
+✔ sales count and average price match SQL (472.341625ms)
+✔ monthly trend adds up to the total and stays within the data (210.63025ms)
+✔ future-dated rows are excluded (226.669833ms)
+✔ first and last months are marked partial, and the change uses full months (229.503708ms)
+✔ sale-to-list uses the median, so typo'd list prices don't skew it (225.899167ms)
+✔ type filter only counts that property type (516.953917ms)
+✔ ZIP codes work (309.112958ms)
+✔ months of supply = active listings / monthly sales pace (211.321833ms)
+✔ unknown city returns null and suggests close matches (304.003833ms)
+✔ SQL injection in the city is treated as text (203.386333ms)
+✔ summary includes the deliverable's metrics (227.640833ms)
+✔ handbook example (0.877709ms)
+✖ price written as '2 mil' (0.523875ms)
+✔ baths with a decimal (2.5 bath) (0.057208ms)
+✔ number of beds (0.050708ms)
+✔ Has a view (0.051541ms)
+✔ 'apartment' is not a recognized type (0.049459ms)
+✔ price written as '3M' (0.048208ms)
+✔ type test --> land (0.056584ms)
+✔ how many square feet (0.06075ms)
+✔ no pool mentioned -> null (0.51375ms)
+ℹ tests 42
+ℹ suites 0
+ℹ pass 41
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3226.048458
+
+✖ failing tests:
+
+test at tests/parse.test.ts:15:1
+✖ price written as '2 mil' (0.523875ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  2 !== 2000000
+  
+      at TestContext.<anonymous> (file:///Users/aidenhunter/IDX-Agentic-AI/tests/parse.test.ts:17:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 2,
+    expected: 2000000,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

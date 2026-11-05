@@ -1,0 +1,64 @@
+$ node skills/market-stats/stats.ts "San Diego"
+*San Diego market* (4,620 sales, data through 2026-09-17)
+Median sale price: $950,000 (avg $1,173,090)
+Median price/sqft: $676
+Days on market: 14 median (avg 28)
+Sale-to-list: 100.0% of asking (median) · 35% sold over asking
+Active listings: 2,198 · ~2.8 months of supply
+Market: *seller's market*
+
+*Monthly trend* (median price · sales · median DOM)
+Mar 2026*: $925K · 319 · 13
+Apr 2026: $910K · 812 · 13.5
+May 2026: $935K · 781 · 12
+Jun 2026: $1.01M · 819 · 15
+Jul 2026: $943K · 824 · 16
+Aug 2026: $980K · 736 · 14
+Sep 2026*: $890K · 329 · 20
+_* partial month_
+Apr 2026 → Aug 2026: median price +7.7%, DOM 13.5 → 14
+
+$ node skills/market-stats/stats.ts "Pasadena"
+*Pasadena market* (565 sales, data through 2026-09-17)
+Median sale price: $1,292,385 (avg $1,641,518)
+Median price/sqft: $797
+Days on market: 18 median (avg 37)
+Sale-to-list: 100.6% of asking (median) · 54% sold over asking
+Active listings: 316 · ~3.2 months of supply
+Market: *seller's market*
+
+*Monthly trend* (median price · sales · median DOM)
+Mar 2026*: $1.13M · 35 · 16
+Apr 2026: $1.25M · 92 · 13.5
+May 2026: $1.30M · 93 · 18
+Jun 2026: $1.30M · 102 · 20.5
+Jul 2026: $1.15M · 107 · 18
+Aug 2026: $1.31M · 98 · 18
+Sep 2026*: $1.27M · 38 · 31
+_* partial month_
+Apr 2026 → Aug 2026: median price +5.1%, DOM 13.5 → 18
+
+$ node skills/market-stats/stats.ts "Irvine" --type condo
+*Irvine Condominium market* (564 sales, data through 2026-09-17)
+Median sale price: $1,250,000 (avg $1,290,373)
+Median price/sqft: $748
+Days on market: 26.5 median (avg 42)
+Sale-to-list: 98.2% of asking (median) · 14% sold over asking
+Active listings: 363 · ~4.1 months of supply
+Market: *balanced market*
+
+*Monthly trend* (median price · sales · median DOM)
+Mar 2026*: $1.42M · 56 · 15.5
+Apr 2026: $1.21M · 91 · 20
+May 2026: $1.30M · 81 · 24
+Jun 2026: $1.24M · 96 · 27
+Jul 2026: $1.16M · 96 · 42
+Aug 2026: $1.22M · 83 · 26
+Sep 2026*: $1.27M · 61 · 38
+_* partial month_
+Apr 2026 → Aug 2026: median price +1.2%, DOM 20 → 26
+
+$ node skills/market-stats/stats.ts --compare Irvine Tustin Pasadena
+*Irvine*: $1,494,444 median · $789/sqft · 24 DOM · 98.1% of asking · 1,102 sales · balanced
+*Tustin*: $1,220,000 median · $673/sqft · 15 DOM · 99.9% of asking · 245 sales · seller's
+*Pasadena*: $1,292,385 median · $797/sqft · 18 DOM · 100.6% of asking · 565 sales · seller's
