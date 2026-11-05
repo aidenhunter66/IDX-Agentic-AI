@@ -16,7 +16,7 @@ export function listingCard(row: ListingRow, index: number) {
     `*${index}. ${row.L_Address}, ${row.L_City} ${row.L_Zip}*`,
     `${money(row.price)} · ${num(row.beds)} bd / ${num(row.baths)} ba · ${row.sqft ? row.sqft.toLocaleString("en-US") : "?"} sqft`,
     features.length ? features.join(" · ") : null,
-    `MLS# ${row.L_DisplayId}`,
+    `MLS# ${row.L_DisplayId} · ${row.PhotoCount ?? 0} photos`,
   ].filter(Boolean).join("\n");
 }
 

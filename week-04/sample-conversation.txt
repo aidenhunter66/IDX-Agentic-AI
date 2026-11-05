@@ -1,0 +1,152 @@
+User: Find homes in Irvine
+Agent:
+What is your budget? (e.g. under 1.2M, or "no limit")
+
+----
+User: Under $1.2M
+Agent:
+Any preference — condo, townhome, or single family? (or say "any")
+
+----
+User: Single family with at least 3 beds
+Agent:
+Searching: Irvine · under $1,200,000 · 3+ bd · Single Family Residence
+Found 4 active listings (showing 1–4, cheapest first):
+
+*1. 7 Wilking Dr., Irvine 92620*
+$1,128,888 · 3 bd / 3 ba · 1,672 sqft
+SingleFamilyResidence · HOA $562/mo
+MLS# 1178201812 · 28 photos
+
+*2. 5 Tiger, Irvine 92604*
+$1,149,998 · 3 bd / 3 ba · 1,808 sqft
+SingleFamilyResidence · View · HOA $330/mo
+MLS# 1179087049 · 67 photos
+
+*3. 3 Willow Tree, Irvine 92612*
+$1,199,998 · 3 bd / 2 ba · 1,295 sqft
+SingleFamilyResidence · View · HOA $395/mo
+MLS# 1176788561 · 45 photos
+
+*4. 14541 Countrywood, Irvine 92604*
+$1,200,000 · 3 bd / 2 ba · 1,316 sqft
+SingleFamilyResidence · View
+MLS# 1190582206 · 33 photos
+
+Add a filter to refine (e.g. "with a pool"), or say "start over".
+
+----
+User: Actually make it under 1.5M
+Agent:
+Searching: Irvine · under $1,500,000 · 3+ bd · Single Family Residence
+Found 35 active listings (showing 1–5, cheapest first):
+
+*1. 7 Wilking Dr., Irvine 92620*
+$1,128,888 · 3 bd / 3 ba · 1,672 sqft
+SingleFamilyResidence · HOA $562/mo
+MLS# 1178201812 · 28 photos
+
+*2. 5 Tiger, Irvine 92604*
+$1,149,998 · 3 bd / 3 ba · 1,808 sqft
+SingleFamilyResidence · View · HOA $330/mo
+MLS# 1179087049 · 67 photos
+
+*3. 3 Willow Tree, Irvine 92612*
+$1,199,998 · 3 bd / 2 ba · 1,295 sqft
+SingleFamilyResidence · View · HOA $395/mo
+MLS# 1176788561 · 45 photos
+
+*4. 14541 Countrywood, Irvine 92604*
+$1,200,000 · 3 bd / 2 ba · 1,316 sqft
+SingleFamilyResidence · View
+MLS# 1190582206 · 33 photos
+
+*5. 9 Badger Pass, Irvine 92604*
+$1,274,999 · 3 bd / 2 ba · 1,305 sqft
+SingleFamilyResidence · View · HOA $351/mo
+MLS# 1161248379 · 41 photos
+
+Reply "more" for the next 5, add a filter to refine (e.g. "with a pool"), or say "start over".
+
+----
+User: more
+Agent:
+Searching: Irvine · under $1,500,000 · 3+ bd · Single Family Residence
+Found 35 active listings (showing 6–10, cheapest first):
+
+*6. 12 Tortoise Shell, Irvine 92604*
+$1,299,000 · 4 bd / 3 ba · 2,004 sqft
+SingleFamilyResidence · View · HOA $330/mo
+MLS# 1176760109 · 56 photos
+
+*7. 23 Amoret, Irvine 92602*
+$1,299,999 · 3 bd / 3 ba · 1,651 sqft
+SingleFamilyResidence · View
+MLS# 1178546358 · 36 photos
+
+*8. 760 Gadwall, Irvine 92618*
+$1,349,708 · 3 bd / 4 ba · 2,060 sqft
+SingleFamilyResidence · HOA $240/mo
+MLS# 1151655957 · 34 photos
+
+*9. 101 Tall Oak, Irvine 92603*
+$1,350,000 · 3 bd / 3 ba · 1,869 sqft
+SingleFamilyResidence · View · HOA $365/mo
+MLS# 1173375123 · 44 photos
+
+*10. 105 Moody, Irvine 92618*
+$1,352,709 · 3 bd / 4 ba · 2,060 sqft
+SingleFamilyResidence · HOA $240/mo
+MLS# 1176983092 · 31 photos
+
+Reply "more" for the next 5, add a filter to refine (e.g. "with a pool"), or say "start over".
+
+----
+User: start over
+Agent:
+Which city are you looking in?
+
+----
+User: condo
+Agent:
+Which city are you looking in?
+
+----
+User: Tustin
+Agent:
+What is your budget? (e.g. under 1.2M, or "no limit")
+
+----
+User: 900k
+Agent:
+Searching: Tustin · under $900,000 · Condominium
+Found 30 active listings (showing 1–5, cheapest first):
+
+*1. 154 Gallery, Tustin 92782*
+$499,000 · 1 bd / 1 ba · 550 sqft
+Condominium · HOA $509/mo
+MLS# 1169530795 · 34 photos
+
+*2. 1881 Mitchell 95, Tustin 92780*
+$520,000 · 2 bd / 2 ba · 1,051 sqft
+Condominium · HOA $624/mo
+MLS# 1154949942 · 32 photos
+
+*3. 2800 Keller 70, Tustin 92782*
+$525,000 · 1 bd / 1 ba · 678 sqft
+Condominium · HOA $315/mo
+MLS# 1190056064 · 40 photos
+
+*4. 1192 Mitchell 3, Tustin 92780*
+$535,000 · 2 bd / 2 ba · 840 sqft
+Condominium · HOA $385/mo
+MLS# 1169814056 · 28 photos
+
+*5. 17574 Vandenberg 11, Tustin 92780*
+$538,999 · 2 bd / 2 ba · 772 sqft
+Condominium · View · HOA $491/mo
+MLS# 1190408561 · 16 photos
+
+Reply "more" for the next 5, add a filter to refine (e.g. "with a pool"), or say "start over".
+
+----

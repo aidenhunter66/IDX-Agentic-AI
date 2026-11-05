@@ -26,3 +26,4 @@ Queries two MLS datasets in MySQL (`idx_exchange`):
 - [x] Week 1: Architecture fundamentals
 - [x] Week 2: Natural language property search ([tests](week-02/test-results.txt), [WhatsApp demo](week-02/IMG_4040.jpeg))
 - [x] Week 3: MLS database integration ([tests](week-03/test-results.txt), [sample output](week-03/sample-output.txt), [WhatsApp search](week-03/IMG_4047.jpeg), [WhatsApp comps](week-03/IMG_4048.png))
+- [x] Week 4: Conversational search agent ([tests](week-04/test-results.txt), [sample conversation](week-04/sample-conversation.txt), WhatsApp: [1](week-04/IMG_4133.PNG) [2](week-04/IMG_4134.PNG) [3](week-04/IMG_4135.PNG) [4](week-04/IMG_4136.PNG) [5](week-04/IMG_4137.PNG))

@@ -1,0 +1,61 @@
+
+> idx-agentic-ai@1.0.0 test
+> node --test tests/*.test.ts
+
+✔ handbook conversation: asks for budget, then type, then searches (24.527042ms)
+✔ a complete first message searches right away (5.089625ms)
+✔ missing city is asked first, and a bare city name answers it (4.722292ms)
+✔ a bare amount answers the budget question (0.993625ms)
+✔ a filter given instead of the city doesn't become the city (2.796708ms)
+✔ bare answers only count right after the question (4.611333ms)
+✔ each question is asked only once; 'any' skips it (5.303375ms)
+✔ a follow-up refines the previous search (7.78325ms)
+✔ 'more' shows the next page (5.878042ms)
+✔ 'start over' clears the session (3.204208ms)
+✔ small talk after results doesn't re-run the search (4.459042ms)
+✔ users don't share sessions (3.924542ms)
+✔ handbook query returns matching Irvine condos (15.802ms)
+✔ pool filter matches rows (database stores '1', not 'True') (3.728542ms)
+✔ view filter only returns listings with a view (2.406125ms)
+✔ results are sorted cheapest first (4.637958ms)
+✔ limit and page work (8.137791ms)
+✔ impossible search returns no rows (4.177959ms)
+✔ SQL injection in the city is treated as text (0.46475ms)
+✔ sold comps are recent, residential, and never in the future (124.274959ms)
+✔ handbook example (0.865042ms)
+✖ price written as '2 mil' (0.510042ms)
+✔ baths with a decimal (2.5 bath) (0.057458ms)
+✔ number of beds (0.052167ms)
+✔ Has a view (0.053166ms)
+✔ 'apartment' is not a recognized type (0.058ms)
+✔ price written as '3M' (0.048125ms)
+✔ type test --> land (0.054666ms)
+✔ how many square feet (0.056ms)
+✔ no pool mentioned -> null (0.540541ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 29
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 248.355958
+
+✖ failing tests:
+
+test at tests/parse.test.ts:15:1
+✖ price written as '2 mil' (0.510042ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  2 !== 2000000
+  
+      at TestContext.<anonymous> (file:///Users/aidenhunter/IDX-Agentic-AI/tests/parse.test.ts:17:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 2,
+    expected: 2000000,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

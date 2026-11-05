@@ -10,7 +10,8 @@ export type PropertyFilters = {
 };
 
 export async function parsePropertyQuery(query: string): Promise<PropertyFilters> {
- const cityMatch = query.match(/in ([A-Za-z\s]+?)(?:\s+under|\s+with|\s+at|$)/i);
+ // \b so words ending in "in" don't count; punctuation ends the city ("homes in Irvine.").
+ const cityMatch = query.match(/\bin ([A-Za-z\s]+?)(?:\s+under|\s+with|\s+at|\s*[,.?!]|$)/i);
  const priceMatch = query.match(/under \$?([\d,.]+)(k|m)?/i);
  const bedsMatch = query.match(/(\d+)[\s-]*(bed|beds|bedroom|bedrooms)/i);
  const bathsMatch = query.match(/(\d+(?:\.5)?)[\s-]*(bath|baths|bathroom)/i);
@@ -18,7 +19,7 @@ export async function parsePropertyQuery(query: string): Promise<PropertyFilters
  const poolMatch = /pool/i.test(query);
  const viewMatch = /view/i.test(query);
  const typeMap: Record<string,string> = {
- condo: "Condominium", townhome: "Townhouse",
+ condo: "Condominium", townhome: "Townhouse", townhouse: "Townhouse",
  "single family": "SingleFamilyResidence", land: "UnimprovedLand"
  };
  const typeKey = Object.keys(typeMap).find(k =>
